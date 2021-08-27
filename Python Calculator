@@ -1,0 +1,64 @@
+# -*- coding: utf-8 -*-
+"""
+Spyder Editor
+
+This is a temporary script file.
+"""
+
+day = "Thursday"
+print(type(day))
+day = 32.5
+print(type(day))
+day = 19
+print(type(day))
+day = 3j
+print(type(day))
+
+
+expenses1 = input("How much did you spend on Sunday?")
+expenses2 = input("How much did you spend on Monday?")
+#total$ is a bad varibale name because of the $
+#2total is a bad variable because it doesn't begin with a variable
+#total spent is a bad variable name because it has a space
+total = float(expenses1) + float(expenses2)
+
+print("You spent: $" + "{:.2f}".format(total))
+
+#Casting
+x = int(1)
+y = int(2.8)
+z = int("3")
+print(x, end=" ")
+print(y, end=" ")
+print(z, end=" ")
+
+x = float(1)
+y = float(2.8)
+z = float("3")
+w = float("4.2")
+print(x, end = " ")
+print(y, end = " ")
+print(z, end = " ")
+print(w, end = " ")
+
+x = str("s1")
+y = str(2)
+z = str(3)
+print(x)
+print(y)
+print(z)
+
+x = complex(5)
+print(x)
+
+# Take a radius as an input. Print out the area of that circle.
+# Take a radius as an input. Print out the volume of the sphere.
+# Both answers should be to 4 decimal places printed.
+
+radius1 = input("What is the radius of your cicle? ")
+area1 = 3.14 * int(radius1) ** 2
+print("The area of your circle is " + str(area1))
+
+radius2 = input("What is the radius of your cicle? ")
+area2 = 4/3 * 3.14 * int(radius2) ** 3
+print("The area of your circle is " + str(area2))
